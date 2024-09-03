@@ -1,0 +1,266 @@
+/* Estilos gerais do site */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte principal do site como Arial */
+    margin: 0; /* Remove as margens padrão do body */
+    padding: 0; /* Remove os espaçamentos internos padrão do body */
+    background-color: #f4f4f4; 
+    line-height: 1.6; 
+    color: #333; 
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333; /* Define a cor de fundo do cabeçalho */
+    color: #fff; 
+    padding: 1rem 0; 
+    text-align: center;
+}
+
+/* Estilos da navegação */
+nav {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none; 
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555; 
+}
+
+nav a[aria-current="page"] { 
+    background-color: #555; 
+    font-weight: bold; 
+}
+
+/* Estilos da seção "Sobre Mim" */
+#sobre-mim {
+    display: flex; /* Define o layout da seção como flexbox */
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem; 
+}
+
+#sobre-mim img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.conteudo-sobre {
+    text-align: left; /* Alinha o texto do conteúdo à esquerda */
+}
+
+.cargo {
+    font-size: 1.2rem; /* Define o tamanho da fonte para o cargo */
+    font-weight: bold; 
+    margin-bottom: 1rem; 
+}
+
+.descricao {
+    margin-bottom: 1rem; /* Adiciona margem inferior à descrição */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333; /* Define a cor de fundo do rodapé */
+    color: #fff; 
+    text-align: center; 
+    padding: 1rem 0; 
+}
+/*AQUI FINALIZAMOS A PÁGINA 'SOBRE MIM'*/
+
+
+
+/* Estilos para a página "Formação" */
+
+#formacao {
+    padding: 2rem 0;
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+#formacao h2 {
+    color: #333; /* Define a cor do título "Formação Acadêmica" */
+    margin-bottom: 1rem; /* Adiciona espaçamento inferior ao título */
+}
+
+.container { /* Estilos para o container da formação */
+    max-width: 800px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 2rem; 
+    background-color: #fff; /* Define a cor de fundo do container */
+    border-radius: 8px; /* Define cantos arredondados para o container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao container */
+}
+
+.curso {
+    border-bottom: 1px solid #eee; /* Adiciona uma linha divisória entre os cursos */
+    padding: 1rem 0;
+    text-align: left; /* Alinha o conteúdo do curso à esquerda */
+}
+
+.curso h3 {
+    color: #333; 
+    margin-bottom: 0.5rem; 
+}
+
+.instituicao,
+.periodo,
+.descricao-curso {
+    margin-bottom: 0.5rem; 
+}
+/* AQUI FINALIZAMOS A PÁGINA 'FORMAÇÃO' */
+
+
+
+/* Estilos para a página "Portfólio" */
+
+#portfolio {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos quebrem em várias linhas */
+    justify-content: center;
+    gap: 2rem; /* Define o espaço entre os projetos */
+}
+
+.projeto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o card */
+    width: 300px; /* Define a largura dos cards do projeto */
+    text-align: left;
+    color: #333; 
+}
+
+.projeto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Ajusta a imagem ao container sem distorcer */
+}
+
+.projeto h3 {
+    padding: 1rem;
+}
+
+.projeto p {
+    padding: 0 1rem 1rem; 
+}
+
+.projeto a {
+    display: block; /* Transforma o link em um bloco para ocupar toda a largura */
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none; 
+    text-align: center; 
+    transition: background-color 0.3s;
+}
+
+.projeto a:hover {
+    background-color: #555; 
+}
+/*AQUI FINALIZAMOS A PÁGINA 'PORTFÓLIO'*/
+
+
+
+/* Estilos para a página "Contato" */
+
+#contato {
+    padding: 2rem 0; 
+    text-align: center; 
+}
+
+#contato h2 {
+    color: #333; 
+    margin-bottom: 1rem; 
+}
+
+#contato p {
+    margin-bottom: 2rem; 
+}
+
+/* Estilos do formulário */
+#contato form {
+    display: flex;
+    flex-direction: column; 
+    max-width: 500px;
+    margin: 0 auto; 
+    padding: 2rem;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#contato label {
+    margin-bottom: 0.5rem;
+    text-align: left; 
+}
+
+#contato input,
+#contato textarea {
+    padding: 0.8rem; 
+    margin-bottom: 1rem;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+}
+
+#contato textarea {
+    height: 120px;
+}
+
+#contato button {
+    background-color: #333; 
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+#contato button:hover {
+    background-color: #555; 
+}
+
+/* Estilos das informações de contato adicionais */
+.info-contato {
+    margin-top: 2rem; 
+    text-align: center; 
+}
+
+.info-contato ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.info-contato li {
+    margin-bottom: 0.5rem; 
+}
+
+.info-contato a {
+    color: #333; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.info-contato a:hover {
+    color: #555; 
+}
